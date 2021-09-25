@@ -24,7 +24,7 @@ def rover_gamepad():
 
     rospy.init_node('rover_gamepad', anonymous=True)
 
-    pub = rospy.Publisher('rover_drive', Twist, queue_size=1)
+    pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
 
     rate = rospy.Rate(20)
 
